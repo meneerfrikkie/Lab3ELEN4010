@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Class List</title>
+    <meta charset="utf-8" />
+    <!-- Link JavaScript file; defer ensures it runs after the HTML is parsed -->
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <!-- Main heading for the webpage -->
+    <h1 id="heading">Students in the School of EIE:</h1>
+    
+    <!-- Button to trigger displaying of student list -->
+    <button type="button" id="displayStudentsButton">Display Students</button>
+    
+    <!-- Container where student details will be dynamically added -->
+    <div id="studentList"></div>
+    
+    <!-- Template block for future use or reference, currently not used in JavaScript -->
+    <template id="studentTemplate">
+        <div class="student">
+            <p class="student-info"></p>
+            <button class="editStudentButton">Edit</button>
+        </div>
+    </template>
+</body>
+</html>
