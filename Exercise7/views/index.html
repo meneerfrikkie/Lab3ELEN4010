@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class List</title>
+    <!-- Include Bootstrap CSS from a CDN for styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom styles can be added here or in separate CSS files -->
+</head>
+<body>
+    <div class="container mt-4">
+        <!-- Container to keep the content centered and provide padding -->
+
+        <h2 class="mb-3">Students in the School of EIE:</h2>
+        <!-- Bootstrap classes for margins (mb) are used to space out elements -->
+        
+        <ol id="classList" class="list-group">
+            <!-- Use Bootstrap list-group for styling list items -->
+            <!-- Students will be listed here by the JavaScript fetch call -->
+        </ol>
+
+        <h3 class="mt-4 mb-2">Add a new student</h3>
+        <!-- Margins top (mt) and bottom (mb) to space out the heading -->
+
+        <form action="/class/api/create" method="post" class="mb-4">
+            <!-- Bootstrap classes for form margins (mb) -->
+            <div class="form-group">
+                <!-- Bootstrap form-group for proper formatting and margins of form elements -->
+                <label for="studentName">Enter the student's name:</label>
+                <input type="text" id="studentName" name="student" class="form-control">
+                <!-- form-control for styling input fields in Bootstrap -->
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Add</button>
+                <!-- btn and btn-primary classes for styling buttons in Bootstrap -->
+            </div>
+        </form>
+    </div>
+    <script src="/cdn/scripts/class/index.js"></script>
+    <!-- Link to custom script that handles fetching and displaying data -->
+</body>
+</html>
